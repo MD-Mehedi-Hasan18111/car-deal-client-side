@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Container, Row, Spinner } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import OrderCard from "../../../Shared/OrderCard/OrderCard";
 
 const ManageOrders = () => {
@@ -10,14 +10,6 @@ const ManageOrders = () => {
       .then((res) => res.json())
       .then((data) => setAllOrders(data));
   }, [allOrders]);
-
-  const styleLoading = {
-    position: "absolute",
-    top: "50%",
-    left: "50%",
-    transform: "translate(-50%, -50%)",
-    color: "#3498db",
-  };
 
   return (
     <div className="pt-4">

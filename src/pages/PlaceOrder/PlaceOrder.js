@@ -14,19 +14,16 @@ const PlaceOrder = () => {
   const { id } = useParams();
   const [product, setProduct] = useState({});
   const { user } = useAuth();
-  const [order, setOrder] = useState({});
 
   useEffect(() => {
     fetch(`https://gentle-cliffs-80284.herokuapp.com/placeOrder/${id}`)
       .then((res) => res.json())
       .then((data) => setProduct(data));
-  }, []);
+  }, [id]);
 
   const {
     register,
-    handleSubmit,
-    watch,
-    formState: { errors },
+    handleSubmit
   } = useForm();
   const onSubmit = (data, e) => {
     data.carName = product.name;

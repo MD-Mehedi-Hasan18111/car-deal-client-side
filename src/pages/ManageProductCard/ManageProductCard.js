@@ -1,5 +1,5 @@
 import { Card } from "react-bootstrap";
-import React, { useEffect } from "react";
+import React from "react";
 import { Col } from "react-bootstrap";
 
 const ManageProductCard = ({ product, deleteProduct }) => {

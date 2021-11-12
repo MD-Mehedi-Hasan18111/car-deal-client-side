@@ -48,7 +48,6 @@ const ReviewCard = ({ review }) => {
               color="#666"
               count={Number(rating)}
               value={Number(rating)}
-              size={24}
               activeColor="#ffd700"
             />
           </div>

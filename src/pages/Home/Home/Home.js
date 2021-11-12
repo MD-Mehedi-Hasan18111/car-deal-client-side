@@ -5,6 +5,7 @@ import TopHeader from '../../../Shared/TopHeader/TopHeader';
 import Banner from '../Banner/Banner';
 import Reviews from '../Reviews/Reviews';
 import TopCar from '../TopCar/TopCar';
+import Services from '../Services/Services';
 
 const Home = () => {
     return (
@@ -13,6 +14,7 @@ const Home = () => {
             <Navigation />
             <Banner />
             <TopCar />
+            <Services />
             <Reviews />
             <Footer />
         </div>

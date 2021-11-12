@@ -50,13 +50,6 @@ function UserDashboard(props) {
 
   let { path, url } = useRouteMatch();
 
-  const styleLoading = {
-    position: "absolute",
-    top: "50%",
-    left: "50%",
-    transform: "translate(-50%, -50%)"
-  }
-
   const drawer = (
     <div>
       <div className="text-center my-3">
