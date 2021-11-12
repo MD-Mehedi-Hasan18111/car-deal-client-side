@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Alert, Container } from "react-bootstrap";
+import { Alert, Container, Spinner } from "react-bootstrap";
 import { Link, useLocation, useHistory } from "react-router-dom";
 import swal from "sweetalert";
 import useAuth from "../../hooks/useAuth";
@@ -9,7 +9,7 @@ import "./Signup.css";
 
 const Signup = () => {
   const [userInfo, setUserInfo] = useState({});
-  const { createUser, authError } = useAuth();
+  const { createUser, authError, isLoading } = useAuth();
 
   const location = useLocation();
   const history = useHistory();
@@ -34,6 +34,14 @@ const Signup = () => {
     }
   };
 
+  const styleLoading = {
+    position: "absolute",
+    top: "50%",
+    left: "50%",
+    transform: "translate(-50%, -50%)",
+    color: "#3498db",
+  };
+
   return (
     <div>
       <TopHeader />
@@ -44,7 +52,11 @@ const Signup = () => {
           <h2 className="text-center mb-4 fw-bold" style={{ color: "#3498db" }}>
             Sign Up
           </h2>
-          <form onSubmit={handleSubmit}>
+          { isLoading ? <div style={styleLoading}>
+            <Spinner animation="border" variant="primary" role="status">
+              <span className="visually-hidden">Loading...</span>
+            </Spinner>
+          </div> : <form onSubmit={handleSubmit}>
             <input
               onBlur={handleBlur}
               type="text"
@@ -72,7 +84,7 @@ const Signup = () => {
             <button type="submit" className="signBtn">
               Sign Up
             </button>
-          </form>
+          </form>}
           <Link to="/signin" className="form-link">
             <p className="mt-3">Already have an account? Sign In</p>
           </Link>
