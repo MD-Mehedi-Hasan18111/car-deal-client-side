@@ -7,7 +7,7 @@ const ManageProducts = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/allProducts")
+    fetch("https://gentle-cliffs-80284.herokuapp.com/allProducts")
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, [products]);
@@ -21,7 +21,7 @@ const ManageProducts = () => {
       dangerMode: true,
     }).then((willDelete) => {
       if (willDelete) {
-        fetch(`http://localhost:5000/allProducts/${id}`, {
+        fetch(`https://gentle-cliffs-80284.herokuapp.com/allProducts/${id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())

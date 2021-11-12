@@ -10,7 +10,7 @@ const OrderCard = ({ order, cancelOrder }) => {
   const { isAdmin } = useAuth();
 
   const shippedOrder = (id) => {
-    fetch(`http://localhost:5000/orders/${id}`, {
+    fetch(`https://gentle-cliffs-80284.herokuapp.com/orders/${id}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",
@@ -33,7 +33,7 @@ const OrderCard = ({ order, cancelOrder }) => {
       dangerMode: true,
     }).then((willDelete) => {
       if (willDelete) {
-        fetch(`http://localhost:5000/orders/${id}`, {
+        fetch(`https://gentle-cliffs-80284.herokuapp.com/orders/${id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())

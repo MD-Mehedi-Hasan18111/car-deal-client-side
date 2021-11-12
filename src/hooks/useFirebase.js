@@ -19,7 +19,7 @@ const useFirebase = () => {
 
   useEffect(() => {
     setIsLoading(true);
-    fetch(`http://localhost:5000/checkAdmin/${user.email}`)
+    fetch(`https://gentle-cliffs-80284.herokuapp.com/checkAdmin/${user.email}`)
     .then(res => res.json())
     .then(data => {
       if (data.role === 'admin'){
@@ -85,7 +85,7 @@ const useFirebase = () => {
     // save user to database
     const saveUser = (name, email) => {
         const newUser = { name, email };
-        fetch('http://localhost:5000/users', {
+        fetch('https://gentle-cliffs-80284.herokuapp.com/users', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

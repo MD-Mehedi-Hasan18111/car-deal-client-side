@@ -17,7 +17,7 @@ const PlaceOrder = () => {
   const [order, setOrder] = useState({});
 
   useEffect(() => {
-    fetch(`http://localhost:5000/placeOrder/${id}`)
+    fetch(`https://gentle-cliffs-80284.herokuapp.com/placeOrder/${id}`)
       .then((res) => res.json())
       .then((data) => setProduct(data));
   }, []);
@@ -32,7 +32,7 @@ const PlaceOrder = () => {
     data.carName = product.name;
     data.image = product.image;
     data.status = "Pending";
-    fetch("http://localhost:5000/orders", {
+    fetch("https://gentle-cliffs-80284.herokuapp.com/orders", {
       method: "POST",
       headers: {
         "content-type": "application/json",

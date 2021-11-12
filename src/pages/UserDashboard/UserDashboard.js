@@ -35,7 +35,7 @@ function UserDashboard(props) {
   const { user, logOut } = useAuth();
 
   React.useEffect(() => {
-    fetch(`http://localhost:5000/checkAdmin/${user.email}`)
+    fetch(`https://gentle-cliffs-80284.herokuapp.com/checkAdmin/${user.email}`)
     .then(res => res.json())
     .then(data => {
       if (data.role === 'admin'){

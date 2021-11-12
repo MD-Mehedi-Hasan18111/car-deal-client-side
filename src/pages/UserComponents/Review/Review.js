@@ -19,7 +19,7 @@ const Review = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     
-      fetch('http://localhost:5000/reviews', {
+      fetch('https://gentle-cliffs-80284.herokuapp.com/reviews', {
           method: 'POST',
           headers: {
               'content-type': 'application/json'
