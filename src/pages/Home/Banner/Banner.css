@@ -1,0 +1,57 @@
+.banner-area{
+    background-image: url('../../../images/banner3.webp');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: rgba(25, 26, 26, 0.657);
+    background-blend-mode: darken, luminosity;
+    color: #fff;
+}
+
+.banner-intro{
+    padding: 100px 0;
+}
+
+.banner-intro h1{
+    font-weight: bold;
+}
+
+.banner-intro p{
+    width: 75%;
+    font-size: 18px;
+}
+
+.readBtn{
+    background-color: #0b79c2;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+
+.readBtn:hover{
+    background-color: #0079ca;
+}
+
+@media only screen and (max-width: 575px) {
+    .banner-intro{
+        padding: 45px 15px;
+    }
+
+    .banner-intro h1{
+        width: 90%;
+        font-size: 24px;
+    }
+
+    .banner-intro p{
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .banner-area{
+        background-size: 100% 100%;
+        background-attachment: unset;
+    }
+}

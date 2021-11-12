@@ -1,0 +1,27 @@
+.dash-menu{
+    text-align: left;
+    margin-left: 40px;
+}
+
+.dash-menu a{
+    text-decoration: none;
+    display: block;
+    margin-bottom: 13px;
+    font-size: 18px;
+    color: #000;
+    padding: 10px;
+}
+
+.dash-menu a:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+.dash-menu .selected-menu{
+    background-color: #000;
+    color: #fff;
+}
+
+.appbar{
+    background-color: #0175AC !important;
+}

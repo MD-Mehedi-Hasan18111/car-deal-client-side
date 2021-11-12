@@ -1,0 +1,71 @@
+[
+    {
+        "name": "Aston Martin",
+        "image": "https://i.ibb.co/fFnmcSB/1.jpg",
+        "description": "The name Aston Martin is derived partly from the name of its founder, Lionel Martin, and partly for a stretch of road in Hertfordshire, England, used for racing, called the Aston Hillclimb. World War I briefly halted production, and afterward Aston Martin produced cars specifically for the racetrack, focusing on speed more than luxury.",
+        "price": 10990
+    },
+
+    {
+        "name": "Audi",
+        "image": "https://i.ibb.co/rpQ9VHS/2.jpg",
+        "description": "German Engineer August Horch founded the company August Horch & Cie. Motorwagenwerke AG, in 1899. Due to misunderstandings among partners, Horch left the company and formed a new company, August Horch Automobilwerke GmbH in 1909. German Engineer August Horch founded the company August Horch & Cie. Motorwagenwerke AG, in 1899. Due to misunderstandings among partners, Horch left the company and formed a new company, August Horch Automobilwerke GmbH in 1909.",
+        "price": 6199
+    },
+
+    {
+        "name": "BMW",
+        "image": "https://i.ibb.co/kGnj7XD/3.jpg",
+        "description": "BMW started its operation in 1912 and was formed by the merger of three German companies. The acronym BMW stands for Bayerische Motoren Werke GmnH, which roughly translates to Bavarian Engine Works Company. The name harks back to the company's origin in the German state of Bavaria. It also indicates BMW's original product range of engines for various applications. The acronym BMW stands for Bayerische Motoren Werke GmnH, which roughly translates to Bavarian Engine Works Company.",
+        "price": 10900
+    },
+
+    {
+        "name": "Cadillac",
+        "image": "https://i.ibb.co/0K1YjGP/4.jpg",
+        "description": "Cadillac was named after the great French explorer Antoine Laumet de La Mothe, Sieur de Cadillac, who founded Detroit, Michigan in 1701. Cadillac is one of the earliest car brands in the US. Founded in 1902, it is known for manufacturing luxury cars. However, the company was later taken over by General Motors in 1909.",
+        "price": 51900
+    },
+
+    {
+        "name": "Chevrolet",
+        "image": "https://i.ibb.co/vkLvKbd/5.jpg",
+        "description": "Chevrolet, also called Chevy, was founded in 1911 by Louis Chevrolet and William C Durant in Detroit, as the Chevrolet Motor Company. Louis Chevrolet was a Swiss race car driver and automotive engineer. Some people have speculated that when the company was founded, the name sounded foreign and exotic, adding a bit of flair and style to the brand. However, just seven years after its founding, Chevrolet became part of General Motors.",
+        "price": 49919
+    },
+
+    {
+        "name": "Datsun",
+        "image": "https://i.ibb.co/RBHGMYW/6.jpg",
+        "description": "Datsun is a Japanese company associated with the production of small and affordable cars. The company began in 1911 as Kwaishinsha Jidosha Kojo, founded by M. Hashimoto. His dream was to produce cars uniquely suited to Japan. In 1914, he completed work on a small 2-cylinder 10-horsepower car, which he named  DAT, after the initial letters of the surnames of his three investors — K. Den, R. Aoyama, and M. Takeuchi.",
+        "price": 29995
+    },
+
+    {
+        "name": "Ferrari",
+        "image": "https://i.ibb.co/71ScbHN/7.jpg",
+        "description": "The luxury car brand Ferrari is named after its Italian founder, Enzo Ferrari, who was an official Alto race driver. In 1939, he quit racing to build his own company. Within one year, he built 1500 cm3 8-Cylinder 815 Spider, winning its first Grand Prix in 1947. In Italian, the word Ferrari is derived from the word 'ferraro', meaning blacksmith.",
+        "price": 693800
+    },
+
+    {
+        "name": "Ford",
+        "image": "https://i.ibb.co/rZQx45G/8.jpg",
+        "description": "He perfected the mass production of cars by introducing moving assembly lines. This gave him the edge to cut the cost and offer an affordable car to the American middle class. His famous mass production car of 1908, Model T, sold more than millions over the next 20 years. Later on, Ford made several acquisitions, including Volvo, Troller, and FPV brands. Later on, Ford made several acquisitions, including Volvo, Troller, and FPV brands.",
+        "price": 39995
+    },
+
+    {
+        "name": "Honda",
+        "image": "https://i.ibb.co/NmrzZTP/9.jpg",
+        "description": "As you probably guessed from the name, Honda was named after its founder, Soichiro Honda. Honda originally founded the manufacturer Tōkai Seiki in 1937, which produced piston rings for Toyota. During World War II, the company's plants were destroyed in a bombing raid and an earthquake. Honda sold what was left of the company to Toyota and used the money to launch the Honda Technical Research Institute.",
+        "price": 505010
+    },
+
+    {
+        "name": "Mercedes",
+        "image": "https://i.ibb.co/xqQFCsv/10.jpg",
+        "description": "Mercedes-Benz traces its origins to Karl Benz, who created the first internal combustion engine used in a car, the Benz Patent Motorwagen, in 1886; and to the Daimler-Motoren-Gesellschaft (DMG), founded by Gottlieb Daimler. Mercedes was a brand built by DMG, who registered the name in 1902. It had originally been applied to an automobile model built by Wilhelm Maybach in 1900. The model contained a newly designed engine designated the 'Daimler-Mercedes'. The name Mercedes was also applied to another DMG vehicle, the Mercedes-Benz, created in 1926 after the merger of Benz & Cie. and DMG to form Daimler-Benz AG, also in 1926.",
+        "price": 49490
+    }
+]

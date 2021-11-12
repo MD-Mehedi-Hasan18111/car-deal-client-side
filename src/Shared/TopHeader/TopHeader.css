@@ -1,0 +1,35 @@
+.top-header{
+    background-color: #3498db;
+}
+
+.social-icons{
+    text-align: right;
+}
+
+.social-icons i{
+    margin-right: 10px;
+    font-size: 14px;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 6px;
+    border-radius: 8px;
+    cursor:pointer;
+    transition: .4s;
+}
+
+.social-icons i:hover{
+    background-color: #fff;
+    color: #3498db;
+}
+
+@media only screen and (max-width: 575px) {
+    .phone{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .social-icons{
+        text-align: center;
+        padding-bottom: 5px;
+    }
+}
