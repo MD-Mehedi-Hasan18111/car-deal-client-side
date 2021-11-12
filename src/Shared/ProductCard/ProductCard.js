@@ -11,7 +11,7 @@ const ProductCard = ({ car }) => {
     <Zoom top>
       <Col>
         <div className="single-products">
-          <img width="100%" src={image} alt="" />
+          <img width="100%" height="300px" src={image} alt="" />
           <div className="product-des">
             <h3>{name}</h3>
             <p>{description.slice(0, 80)}</p>

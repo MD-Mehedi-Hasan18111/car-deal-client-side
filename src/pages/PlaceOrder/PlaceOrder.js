@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./PlaceOrder.css";
 import { Col, Container, Row } from "react-bootstrap";
-import { useParams } from "react-router";
+import { useParams, useHistory } from "react-router";
 import { Link } from "react-router-dom";
 import Navigation from "../../Shared/Navigation/Navigation";
 import TopHeader from "../../Shared/TopHeader/TopHeader";
@@ -14,6 +14,8 @@ const PlaceOrder = () => {
   const { id } = useParams();
   const [product, setProduct] = useState({});
   const { user } = useAuth();
+
+  const history = useHistory();
 
   useEffect(() => {
     fetch(`https://gentle-cliffs-80284.herokuapp.com/placeOrder/${id}`)
@@ -41,6 +43,7 @@ const PlaceOrder = () => {
         if (data.insertedId) {
           swal("Order has been successful!", "", "success");
           e.target.reset();
+          history.push('/userDashboard/myOrders');
         }
       });
   };
@@ -110,7 +113,7 @@ const PlaceOrder = () => {
                   placeholder="Phone"
                   required
                 />
-                <input className="signBtn" type="submit" />
+                <input className="signBtn" type="submit" value="Submit & Billing" />
               </form>
             </Col>
           </Row>

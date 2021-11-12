@@ -71,7 +71,7 @@ function UserDashboard(props) {
           <NavLink to="/home" activeClassName="selected-menu">
             <i className="fas fa-home"></i> Back to Home
           </NavLink>
-          <button onClick={logOut} className="loginBtn">
+          <button onClick={logOut} className="loginBtn px-5">
             Sign Out
           </button>
         </div>}

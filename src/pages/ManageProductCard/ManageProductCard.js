@@ -8,7 +8,7 @@ const ManageProductCard = ({ product, deleteProduct }) => {
   return (
     <Col>
       <Card style={{ width: "18rem" }}>
-        <Card.Img variant="top" src={image} />
+        <Card.Img variant="top" src={image} height="270px" />
         <Card.Body>
           <Card.Title><span className="fw-bold">{name}</span></Card.Title>
                   <Card.Text>
