@@ -54,15 +54,17 @@ const ManageProducts = () => {
             </Spinner>
           </div>
         ) : (
-          <Row xs={1} md={2} lg={3} className="g-5 mx-auto">
-            {products?.map((product) => (
-              <ManageProductCard
-                key={product._id}
-                deleteProduct={deleteProduct}
-                product={product}
-              />
-            ))}
-          </Row>
+          <Container>
+            <Row xs={1} md={2} lg={3} className="g-5 mx-auto">
+              {products?.map((product) => (
+                <ManageProductCard
+                  key={product._id}
+                  deleteProduct={deleteProduct}
+                  product={product}
+                />
+              ))}
+            </Row>
+          </Container>
         )}
       </Container>
     </div>

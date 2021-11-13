@@ -1,6 +1,7 @@
 import { Card } from "react-bootstrap";
 import React from "react";
 import { Col } from "react-bootstrap";
+import './ManageProductCard.css';
 
 const ManageProductCard = ({ product, deleteProduct }) => {
     const { name, image, price } = product;

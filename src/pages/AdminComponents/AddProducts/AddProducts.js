@@ -43,7 +43,7 @@ const AddProducts = () => {
   return (
     <div>
       <Container>
-        <h2 className="text-center mb-4 fw-bold" style={{ color: "#3498db" }}>
+        <h2 className="text-center mb-4 fw-bold mt-3" style={{ color: "#3498db" }}>
           Add a Product
         </h2>
         <div className="form-area">
