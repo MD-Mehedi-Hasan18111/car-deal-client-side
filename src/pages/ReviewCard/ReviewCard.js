@@ -7,16 +7,17 @@ import ReactStars from "react-rating-stars-component";
 const ReviewCard = ({ review }) => {
   const { name, img, des, rating } = review;
 
-  const cardStyle = {
-    border: "2px solid #3498db",
-    width: "350px",
-    padding: "20px",
-    margin: "15px",
-    borderRadius: "10px",
-  };
+  // const cardStyle = {
+  //   border: "2px solid #3498db",
+  //   width: "350px",
+  //   padding: "20px",
+  //   margin: "15px",
+  //   borderRadius: "10px",
+  // };
 
   return (
-    <Col style={cardStyle} className="review-card">
+    <Col>
+      <div className="review-card">
       <div style={{ height: "150px" }}>
         <p>{des}</p>
       </div>
@@ -52,6 +53,7 @@ const ReviewCard = ({ review }) => {
             />
           </div>
         </div>
+      </div>
       </div>
     </Col>
   );

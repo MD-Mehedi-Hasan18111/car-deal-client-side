@@ -16,7 +16,7 @@ const Reviews = () => {
         <div className="my-5">
             <Container>
             <h2 className="text-center mb-4 fw-bold" style={{color: "#34495e"}}>Customer Reviews!</h2>
-                <Row xs={1} md={2} lg={3} className="g-4">
+                <Row xs={1} md={2} lg={3} className="g-4 mx-2">
                     {
                         reviews?.map(review => <ReviewCard key={review._id} review={review} />)
                     }
